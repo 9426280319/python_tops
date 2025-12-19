@@ -10,4 +10,3 @@ if temp==sum:
     print("Armstrong")
 else:
     print("Not armstrong")
-    
