@@ -117,8 +117,20 @@
 
 # print(x)
 
-name="DEV RATNANI"
-print(name.lower())
+# name="DEV RATNANI"
+# print(name.lower())
+# Converts a string into lower case
+
+
+# txt = "banana"
+
+# x = txt.lstrip()
+
+# print("my favorite fruit is", x, " and whats yours?")
+# aage piche values de sakte hein 
+
+
+
 
 
 

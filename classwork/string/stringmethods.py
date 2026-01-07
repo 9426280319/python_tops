@@ -59,3 +59,4 @@ print(st.strip())
 # print(st[3:8])
 # print(st[-5:-2])
 # print(st[::-1])
+
