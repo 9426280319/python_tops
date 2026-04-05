@@ -1,0 +1,99 @@
+🔹 Lists
+
+1. What is a list in Python?
+Ans. A list in Python is an ordered and mutable collection that allows duplicate elements.
+
+2. How do you create and access elements in a list?
+Ans. A list is created using square brackets [] and elements are accessed using indexing like list[0].
+
+3. Explain positive and negative indexing in lists.
+Ans. Positive indexing starts from 0, while negative indexing starts from -1 from the end.
+
+4. What is list slicing?
+Ans. List slicing is used to access a range of elements using list[start:end].
+
+5. What are common list operations such as concatenation, repetition, and membership?
+Ans. Concatenation joins lists using +, repetition repeats elements using *, and membership checks element using in.
+
+6. Explain the use of list methods: append(), insert(), remove(), and pop().
+Ans. append() adds at end, insert() adds at position, remove() deletes value, and pop() removes by index.
+
+7. How can you iterate over a list using loops?
+Ans. Using loops like for i in list:.
+
+8. Explain how to sort and reverse a list.
+Ans. sort() sorts list, sorted() returns new sorted list, and reverse() reverses list.
+
+9. What are basic list manipulations?
+Ans. Adding, deleting, updating, and slicing elements in a list.
+
+🔹 Tuples
+
+10. What is a tuple in Python?
+Ans. A tuple is an ordered and immutable collection.
+
+11. Explain immutability in tuples.
+Ans. Elements cannot be changed after creation.
+
+12. How do you create and access elements in a tuple?
+Ans. Created using () and accessed using indexing like tuple[0].
+
+13. What are basic operations on tuples?
+Ans. Concatenation, repetition, and membership.
+
+14. How can tuple elements be accessed?
+Ans. Using positive and negative indexing.
+
+15. What is tuple slicing?
+Ans. Accessing a part of tuple using [start:end].
+
+🔹 Dictionaries
+
+16. What is a dictionary in Python?
+Ans. A dictionary is a collection of key-value pairs.
+
+17. Explain key-value pairs.
+Ans. Each key is mapped to a specific value.
+
+18. How can you access, add, update, and delete elements in a dictionary?
+Ans. Access using dict[key], add/update using assignment, delete using del.
+
+19. Explain keys(), values(), and items().
+Ans. keys() returns keys, values() returns values, and items() returns key-value pairs.
+
+20. How can you iterate over a dictionary?
+Ans. Using loop like for key in dict:.
+
+21. How can two lists be merged into a dictionary?
+Ans. Using dict(zip(list1, list2)).
+
+22. How are dictionaries used to count characters in a string?
+Ans. By looping through string and storing count in dictionary.
+
+🔹 Functions
+
+23. What is a function in Python?
+Ans. A function is a block of code used to perform a task.
+
+24. How do you define and call a function?
+Ans. Defined using def and called using function name.
+
+25. Explain types of functions based on parameters and return values.
+Ans. Functions can be with/without parameters and with/without return values.
+
+26. What are lambda functions?
+Ans. Small anonymous functions defined using lambda.
+
+🔹 Modules
+
+27. What is a module in Python?
+Ans. A module is a file containing Python code.
+
+28. How do you import modules in Python?
+Ans. Using import module_name.
+
+29. What are standard modules like math and random?
+Ans. Built-in modules that provide useful functions.
+
+30. How do you create a custom module?
+Ans. By creating a .py file and importing it.

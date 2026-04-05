@@ -1,0 +1,68 @@
+          module 8 advance python programing
+          
+🔹 File Handling
+
+1. What is file handling in Python?
+Ans. File handling is used to create, read, write, and manage files in Python.
+
+2. What are different file modes in Python?
+Ans. Common modes are r (read), w (write), a (append), and r+ (read & write).
+
+3. How do you open and close a file in Python?
+Ans. Using open() to open and close() to close a file.
+
+4. What are read(), readline(), and readlines()?
+Ans. These methods are used to read file content in different ways.
+
+5. What are write() and writelines()?
+Ans. These methods are used to write data into a file.
+
+🔹 Exception Handling
+
+6. What is exception handling in Python?
+Ans. It is used to handle runtime errors using try and except blocks.
+
+7. What is the use of try and except blocks?
+Ans. try is used to test code, and except handles errors.
+
+8. What is finally block?
+Ans. It is always executed whether exception occurs or not.
+
+9. What is the use of else block in exception handling?
+Ans. It runs when no exception occurs.
+
+🔹 Object Oriented Programming (OOP)
+
+10. What is Object-Oriented Programming?
+Ans. It is a programming approach based on objects and classes.
+
+11. What is a class in Python?
+Ans. A class is a blueprint for creating objects.
+
+12. What is an object?
+Ans. An object is an instance of a class.
+
+13. What is init() method?
+Ans. It is a constructor used to initialize objects.
+
+🔹 OOP Concepts
+
+14. What is inheritance?
+Ans. It allows one class to inherit properties from another class.
+
+15. What is polymorphism?
+Ans. It allows same function to behave differently.
+
+16. What is encapsulation?
+Ans. It binds data and methods together in a class.
+
+🔹 Advanced Concepts
+
+17. What are modules and packages in Python?
+Ans. Modules are files and packages are collections of modules.
+
+18. What is the use of pip in Python?
+Ans. pip is used to install Python packages.
+
+19. What is virtual environment?
+Ans. It is used to create isolated Python environments.
