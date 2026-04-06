@@ -1,6 +1,6 @@
 import re
-text="my name is sneha"
-data=re.search("sneha",text)
+text="my name is dev"
+data=re.search("dev",text)
 
 if data:
     print("word found at position:",data.start())

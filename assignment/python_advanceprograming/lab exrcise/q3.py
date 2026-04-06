@@ -2,7 +2,7 @@
 
 f=open("myfile.txt","w")
 
-text=f.write("hello world my name is sneha")
+text=f.write("hello world my name is dev")
 
 f.close()
 

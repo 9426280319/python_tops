@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS student (
 """)
 
 
-cursor.execute("INSERT INTO student (name, age) VALUES ('Sneha', 21)")
+cursor.execute("INSERT INTO student (name, age) VALUES ('dev', 23)")
 conn.commit()
 
 
