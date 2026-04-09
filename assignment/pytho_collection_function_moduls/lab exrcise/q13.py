@@ -1,3 +1,3 @@
-dict={"name":"sneha","email":"sneha@gmail.com","phone":"1234567891","course":"python","fess":"45000"}
-dict.update({"name":"diksha","age":"21"})
+dict={"name":"dev","email":"dev@gmail.com","phone":"1234567891","course":"python","fess":"234567","duration":"12 months"}
+dict.update({"name":"parth","age":"21"})
 print(dict)

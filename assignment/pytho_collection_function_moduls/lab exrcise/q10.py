@@ -1,4 +1,4 @@
-tuple=("sneha","diksha","bansi","shruti","parth","dev","shruti","smit")
+tuple=("sneha","diksha","harsh","jay","parth","dev","fenil","parth")
 
 k=tuple[1:3]
 print(k)

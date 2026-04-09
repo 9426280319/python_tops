@@ -1,5 +1,5 @@
 l1=["name","age","city"]
-l2=["sneha","21","surat"]
+l2=["dev","23","Vyara"]
 
 dict={}
 

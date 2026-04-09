@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Doctor</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f4f8; display: flex; justify-content: center; padding-top: 60px; }
+        .box { background: white; padding: 2rem; border-radius: 14px; width: 360px; border: 0.5px solid #e0e0e0; }
+        h2 { margin-top: 0; color: #1a1a2e; }
+        input { width: 100%; padding: 8px; margin: 6px 0 14px; border-radius: 6px; border: 1px solid #ccc; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #185FA5; color: white; border: none; border-radius: 8px; font-size: 15px; cursor: pointer; margin-bottom: 8px; }
+        label { font-size: 13px; color: #555; }
+        a { display: block; text-align: center; color: #555; font-size: 13px; text-decoration: none; }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>Update Doctor</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Name</label>
+        <input type="text" name="name" value="{{ doctor.name }}" required>
+        <label>Specialty</label>
+        <input type="text" name="specialty" value="{{ doctor.specialty }}" required>
+        <label>Phone</label>
+        <input type="text" name="phone" value="{{ doctor.phone }}" required>
+        <label>Email</label>
+        <input type="email" name="email" value="{{ doctor.email }}" required>
+        <label>Image</label>
+        <input type="file" name="image" accept="image/*">
+        <button type="submit">Update</button>
+        <a href="/doctors/">Cancel</a>
+    </form>
+</div>
+</body>
+</html>

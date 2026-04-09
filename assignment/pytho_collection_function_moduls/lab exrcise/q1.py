@@ -1,3 +1,3 @@
-l= [1,23.4,"sneha","diksha"]
+l= [1,23.4,"dev","jay"]
 
 print(l)

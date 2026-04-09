@@ -9,6 +9,6 @@ class student:
         print("customer name is:-",self.name)
         print("customer age is:-",self.age)
 
-s1=student("sneha",21)
+s1=student("dev",23)
 s1.display()
 
