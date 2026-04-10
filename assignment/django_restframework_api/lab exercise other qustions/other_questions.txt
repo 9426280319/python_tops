@@ -1,0 +1,10 @@
+DRF – 3 Reflective Questions 
+
+Q1. How would you add real-time notifications?
+Use Django Channels with WebSockets. When a student enrolls, trigger a signal that pushes a notification to the connected client in real-time. Use Redis as the channel layer backend.
+
+Q2. How would you allow video course uploads with file size limits?
+Use Django's FileField to handle uploads. Write a custom validator that checks file.size and raises a ValidationError if it exceeds the limit (e.g., 500MB). For production, store videos on AWS S3 using django-storages.
+
+Q3. How would you handle rate-limiting for high traffic?
+Use DRF's built-in Throttling — set AnonRateThrottle and UserRateThrottle in settings.py with limits like 100/hour. For production, add Nginx-level rate limiting and Redis caching to reduce repeated DB hits.
