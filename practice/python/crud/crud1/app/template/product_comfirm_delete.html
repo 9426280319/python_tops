@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<div class="card shadow-sm" style="max-width:400px;">
+  <div class="card-header bg-danger text-white">Confirm Delete</div>
+  <div class="card-body">
+    <p>"<strong>{{ product.name }}</strong>" ko delete karna chahte ho?</p>
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-danger">Haan, Delete Karo</button>
+      <a href="{% url 'product_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+</div>
+{% endblock %}
