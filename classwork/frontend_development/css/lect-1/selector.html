@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            color: blue;
+            text-align: center;
+        }
+        .first{
+            background-color: black;
+            color: white;
+        }
+        #sec{
+            background-color: purple;
+            color: white;
+        }
+        code{
+            background-color: gainsboro;
+        }
+        td,th{
+            border:2px solid black;
+        }
+        table tr{
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Selector Example</h1>
+    <h2>Universal selector(*)</h2>
+    <code >
+         *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+            <br>'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </code>
+    <h2>Element selector</h2>
+    <code>
+          h1{
+            color: blue;
+            text-align: center;
+        }
+    </code>
+    <h2>Class selector(.)</h2>
+    <code>
+          .first{
+            background-color: black;
+            color: white;
+        }
+    </code>
+    <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi assumenda nemo exercitationem omnis nobis ad, hic impedit repellat sint cupiditate? Perferendis dignissimos ea est eum, voluptas libero aspernatur facere deleniti.</p>
+    <h2>Id selector (#)</h2>
+    <p id="sec">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum omnis ratione nemo optio nihil corrupti, aliquam amet reiciendis voluptates minima ipsum officia adipisci consequuntur harum possimus blanditiis voluptatem fuga.
+    </p>
+    <h2>Group selector</h2>
+    <code>
+         td,th{
+            border:2px solid black;
+        }
+    </code>
+    <table>
+        <thead>
+            <tr>
+                <th>Heading-1</th>
+                <th>Heading-2</th>
+                <th>Heading-3</th>
+                <th>Heading-4</th>
+                <th>Heading-5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table-data-1</td>
+                <td>Table-data-2</td>
+                <td>Table-data-3</td>
+                <td>Table-data-4</td>
+                <td>Table-data-5</td>
+            </tr>
+            <tr>
+                <td>Table-data-1</td>
+                <td>Table-data-2</td>
+                <td>Table-data-3</td>
+                <td>Table-data-4</td>
+                <td>Table-data-5</td>
+            </tr>
+            <tr>
+                <td>Table-data-1</td>
+                <td>Table-data-2</td>
+                <td>Table-data-3</td>
+                <td>Table-data-4</td>
+                <td>Table-data-5</td>
+            </tr>
+            <tr>
+                <td>Table-data-1</td>
+                <td>Table-data-2</td>
+                <td>Table-data-3</td>
+                <td>Table-data-4</td>
+                <td>Table-data-5</td>
+            </tr>
+            <tr>
+                <td>Table-data-1</td>
+                <td>Table-data-2</td>
+                <td>Table-data-3</td>
+                <td>Table-data-4</td>
+                <td>Table-data-5</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Css Descendant Selector</h2>
+    <code> table tr{
+            background-color: gainsboro;
+        }</code>
+</body>
+</html>
