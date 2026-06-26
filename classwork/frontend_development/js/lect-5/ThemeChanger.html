@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 600px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: static;
+           
+        }
+        button{
+            position: absolute;
+            top: 0; 
+            z-index: 1;  
+        }
+        #btn1{
+             right:0
+        }
+         #btn2{
+             right:50px
+        }
+    </style>
+</head>
+<body>
+     
+    <div id="main">
+       <button onclick="changeTheme('dark')" id="btn1">Dark</button>
+        <button onclick="changeTheme('light')" id="btn2">Light</button>
+         <div class="inner">
+            <h1>Welcome to App</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         </div>
+    </div>
+
+
+    <script>
+        function changeTheme(flag){
+            let ele = document.getElementById('main');
+            if(flag=='dark'){
+                ele.style.backgroundColor="black"
+                ele.style.color="white"
+            }
+            else{
+                 ele.style.backgroundColor="white"
+                ele.style.color="black"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    height: 600px;
+    background-image: url(images/pink.jpeg);
+    background-size: 100% 100%;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    padding: 0px 100px;
+    background-color: rgba(240, 98, 200, 0.7);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.logodiv label{
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.navbar{
+    display: flex;
+    gap: 20px;
+    
+}
+.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+.serchDiv input{
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+}
+.hero-text{
+    text-align: center;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
+.hero-text h1{
+     font-size: 4em;
+     text-shadow: 3px 3px 5px gray;
+}
+.hero-text p{
+    font-size: 1.5em;
+    font-weight: 200;
+}
+.hero-text button, .btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px gray;;
+    
+}
+/* ==============About============= */
+.about{
+     margin: 50px 0px;
+     position: relative;
+     top: 10px;
+}
+.sub-heading{
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 3px gray;
+    font-weight: bolder;
+}
+.about-row{
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h3{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.about-col p{
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* ==============service div======================= */
+.service{
+    margin:50px 0px;
+    padding: 50px 100px;
+}
+.service-row {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.service-row .col{
+    box-shadow: 5px 5px 5px 5px gray;
+     padding: 20px;
+     border-radius: 20px;
+}
+.col-img ,.col-img img{
+     width: 100%;
+}

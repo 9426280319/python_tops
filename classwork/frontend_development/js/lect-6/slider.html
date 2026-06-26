@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        .main{
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .main img{
+            height: 500px;
+            width: 100%;
+            display: none;
+        }
+        #img-1{
+            display: block;
+        }
+        #left{
+            position: absolute;
+            left: 20px;
+            top: 50%;
+        }
+        #right{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+        }
+
+        button{
+            background-color: transparent;
+            border: none;
+        }
+        i{
+            color: rgb(12, 241, 42);
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button id="left"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="right"><i class="fa-solid fa-arrow-right"></i></button>
+        <img src="spongebob-squrepants.jpg" alt="" id="img-1">
+        <img src="poweer-ranger.jpg" alt="" id="img-2">
+        <img src="perman.jpg" alt="" id="img-3">
+    </div>
+
+    <script>
+        let counter = 1;
+        document.getElementById('right').addEventListener('click',function(){
+            console.log("ber",counter);
+          
+          
+            let preImg = "img-"+counter;
+            document.getElementById(preImg).style.display="none";
+
+            if(counter == 3){
+                console.log('in c',counter);
+                
+                counter = 0
+                
+            }
+            counter++;
+            let curImg= "img-"+counter;
+            console.log("after",counter);
+            
+            document.getElementById(curImg).style.display="block";
+             
+          
+        })
+
+        document.getElementById('left').addEventListener('click',function(){
+              console.log("Leftber",counter);
+                let preImg = "img-"+counter;
+               // console.log(preImg);
+                
+            document.getElementById(preImg).style.display="none";
+           
+            counter--;
+            if(counter == 0){
+                counter = 3
+            }
+            let curImg = "img-"+counter;
+            console.log(curImg);
+            
+            document.getElementById(curImg).style.display="block";
+            });
+
+    </script>
+</body>
+</html>

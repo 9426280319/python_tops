@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+   </div>
+
+    <button onclick="changeColor()">Click</button>
+
+    <script>
+        function changeColor(){
+            let boxArray = document.getElementsByClassName('box');
+            console.log(boxArray);
+            for(i=0;i<boxArray.length;i++){
+                if(i%2==0){
+                    boxArray[i].style.backgroundColor="red";
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>

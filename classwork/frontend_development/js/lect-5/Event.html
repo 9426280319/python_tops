@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <input type="text" name="" id="txt1">
+        <p id="result"></p>
+
+        <button id="btn">Click</button>
+    </fieldset>
+
+    <script>
+        document.getElementById('txt1').addEventListener('change',function(e){
+            console.log(e.target.value);
+            document.getElementById('result').textContent=e.target.value
+        })
+
+        document.getElementById('btn').addEventListener('click',()=>{
+             alert("button clicked")
+        })
+    </script>
+</body>
+</html>

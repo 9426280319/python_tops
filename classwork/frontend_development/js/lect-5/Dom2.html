@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <button onclick="getPara()">Click</button>
+    <img src="" alt="" id="img1">
+    <button onclick="createImg()">Create Image Using Url</button>
+
+    <script>
+        function getPara(){
+            let text = prompt("Enter text here");
+            let p1 = document.getElementById('para1');
+            console.log(p1);
+           // p1.textContent=text;
+           p1.innerHTML=text;
+            
+        }
+        function createImg(){
+            let imgPath = prompt('Enter image url');
+            let img1 = document.getElementById('img1');
+            img1.setAttribute('src',imgPath)
+            img1.setAttribute('height','100px')
+             img1.setAttribute('width','100px')
+        }
+    </script>
+</body>
+</html>

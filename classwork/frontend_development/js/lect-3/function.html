@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //=================Function====================
+        function test(){
+            console.log('simple function example');         
+        }
+        test();
+         //=================Function with parameter==========
+         function addition(x,y){
+            console.log("addition=",x+y);            
+         }
+         addition(100,300);
+          //=========Function returning value====================
+          function squareFind(num){
+              return num*num;
+          }
+          console.log("square =",squareFind(12));
+          //============recursive function==================
+          function factFind(num){
+               if(num==1){
+                  return 1;
+               }
+               let f = num * factFind(num-1);
+               return f;
+          }
+          console.log("factorial=",factFind(5));
+          //============function  with default value==================
+          function add(x,y,z=0){
+                console.log("additiion=",x+y+z);
+                
+          }
+          add(1,2,3);
+          add(1,4)
+          //====function as expression====
+          let sayHello = function (){
+               console.log("say hi hello by");
+               
+          }
+          sayHello()
+
+          //================callback ===========
+          function Even(num){
+            console.log(`${num} is even`);   
+          }
+           function Odd(num){
+            console.log(`${num} is odd`);   
+          }
+          function FindEvenOdd(cb1,cb2){
+              let num =prompt('Enter num');
+              if(num%2==0){
+                    cb1(num)
+              }
+              else{
+                cb2(num)
+              }
+          }
+
+         // FindEvenOdd(Even,Odd)
+          
+         // ================Arrow function==============
+          let sum = (a,b) => a+b;
+          console.log(sum(12,45));
+
+          let Area = (r)=>{
+              let a= 3.14*r*r;
+              return a
+          }
+          console.log("area of circle",Area(2));
+          
+
+
+          
+    </script>
+</body>
+</html>

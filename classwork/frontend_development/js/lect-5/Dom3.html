@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="tbl1">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="pdata">
+
+        </tbody>
+    </table>
+
+    <button onclick="createProduct()">Create Product</button>
+
+    <script>
+        let  counter = 0;
+        function createProduct(){
+            let pname = prompt("Enter Product Name");
+            let price = prompt("Enter price");
+
+            let tr1 = document.createElement('tr');
+            counter++;
+            tr1.setAttribute('id','tr-'+counter)
+            tr1.innerHTML=`<td>${pname}</td>
+                            <td>${price}</td>
+                            <td><button onclick="delRow('tr-${counter}')">X</button></td>
+                            `
+            console.log(tr1);
+            document.getElementById('pdata').appendChild(tr1)               
+        }
+
+        function delRow(id){
+            let pdata = document.getElementById('pdata');
+            let trRemove = document.getElementById(id);
+            pdata.removeChild(trRemove)
+        }
+
+
+    </script>
+</body>
+</html>

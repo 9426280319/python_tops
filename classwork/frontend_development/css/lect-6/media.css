@@ -1,0 +1,26 @@
+@media screen and (max-width:768px) {
+     .main{
+        height: auto;
+     }
+     nav{
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 20px;
+     }
+     .navbar{
+        flex-direction: column;
+     }
+     .about-row{
+        padding: 10px 30px;
+        grid-template-columns: 1fr;
+     }
+      .service{
+     
+      padding: 50px 30px;
+   }
+   .service-row{
+      grid-template-columns: 1fr;
+   }
+}

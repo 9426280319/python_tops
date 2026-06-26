@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <label for="">Enter Number</label>
+        <input type="text" name="" id="num1">
+        <br><br>
+        <label for="">Enter Number</label>
+        <input type="text" name="" id="num2">
+        <br><br>
+        <input type="button" value="Submit" onclick="simpleCalc()">
+        <div id="result">
+
+        </div>
+    </fieldset>
+
+    <script>
+        function simpleCalc(){
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            // num1 = Number(num1);
+            // num2 = Number(num2)
+            num1 = +num1;
+            num2 = +num2
+            let str=`
+                Adiition=${num1+num2}<br>
+                Sub=${num1-num2}<br>
+                Mul=${num1*num2}<br>
+                Div=${num1/num2}<br>
+                Modulo=${num1%num2}<br>
+            `
+            document.getElementById('result').innerHTML=str
+        }
+
+        let n = 2;
+        console.log(n);
+        
+        n = n + 5;
+          console.log(n);
+        n = n * 2;
+          console.log(n);
+
+          console.log('2'===2);
+          
+    </script>
+</body>
+</html>

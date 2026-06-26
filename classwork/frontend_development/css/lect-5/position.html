@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            background-color: aqua;
+            position: static;
+           
+        }
+        .box-1{
+            height: 400px;
+            background-color: aquamarine;
+            position: relative;
+            /* top: 100px;
+            bottom: 100px; */
+        }
+        .inner{
+            position: absolute;
+            /* height: 100px; */
+            width: 200px;
+            background-color: red;
+            top: 50%;
+           left:  50%;
+          
+        }
+        .fix-div{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            color: white;
+            position: fixed;
+            top:200px;
+            right: 10px;
+            z-index: 1;
+        }
+        .nav{
+           
+            background-color: black;
+            color: white;
+             position: sticky;
+            top:0;
+            padding: 20px 0px;
+            z-index: 1;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="box">staic position example</div>
+    <div class="nav">Navbar</div>
+    <div class="box-1">
+            <div class="inner">
+                This is absolute div
+            </div>
+            <!-- <div class="inner1">
+                This is 2absolute div
+            </div> -->
+    </div>
+    <div class="box">staic position example</div>
+    <div class="fix-div">
+        this is fixed div
+    </div>
+     <div class="box">staic position example</div>
+    <div class="box-1">
+            <div class="inner">
+                This is absolute div
+            </div>
+            <!-- <div class="inner1">
+                This is 2absolute div
+            </div> -->
+    </div>
+</body>
+</html>

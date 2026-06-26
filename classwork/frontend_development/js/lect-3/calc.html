@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Simple Calculator</legend>
+        <label for="">Enter num1</label>
+        <input type="text" name="" id="num1">
+        <br><br>
+         <label for="">Enter num2</label>
+        <input type="text" name="" id="num2">
+        <br><br>
+        <input type="button" value="+"  onclick="calc('+')">
+        <input type="button" value="-"  onclick="calc('-')">
+        <input type="button" value="*"  onclick="calc('*')">
+        <input type="button" value="/"  onclick="calc('/')">
+        <h2 id="result"></h2>
+    </fieldset>
+
+
+    <script>
+        function calc(op){
+            let num1 = +document.getElementById('num1').value;
+            let num2= +document.getElementById('num2').value;
+            let str=""
+            switch(op){
+                case '+':
+                    str+=`Addition = ${num1 +num2}`
+                break;  
+                case '-':
+                    str+=`Substraction = ${num1 - num2}`
+                break;  
+                case '*':
+                    str+=`Multiplication = ${num1 * num2}`
+                break;  
+                case '/':
+                    str+=`Division = ${num1 / num2}`
+                break;    
+                default:
+                    str+=`Invalid choice`;
+            }
+            document.getElementById('result').innerHTML=str;
+
+        }
+    </script>
+</body>
+</html>

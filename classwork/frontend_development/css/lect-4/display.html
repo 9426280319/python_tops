@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 10px solid black;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap-reverse; */
+            justify-content: space-evenly;
+            align-items:baseline;
+            gap: 20px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .box:nth-child(even){
+            align-self: flex-end;
+        }
+        #box-11{
+            order: 3;
+            /* flex-shrink: 3; */
+            flex-basis: 400px;
+        }
+        #box-21{
+            order: 2;
+            /* flex-grow: 3; */
+            align-self: flex-end;
+        }
+        #box-31{
+            order: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+        <div class="box" id="box-9">box-9</div>
+        <div class="box" id="box-10">box-10</div>
+    </div>
+     <div class="main">
+        <div class="box" id="box-11">box-1</div>
+        <div class="box" id="box-21">box-2</div>
+        <div class="box" id="box-31">box-3</div>
+       
+    </div>
+</body>
+</html>
