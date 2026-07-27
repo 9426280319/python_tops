@@ -1,0 +1,38 @@
+<!-- q1.what is java script?
+ JavaScript is a scripting language used for creating interactive web pages, adding dynamic features, handling events, validating forms, creating animations, updating content without reloading the page, and communicating with servers. -->
+ <!-- q.2 what do "dynamic features" mean
+  Dynamic features are things on a website that change or respond without reloading the page.
+
+Examples:
+
+✅ Form validation (checking email, password, etc.)
+✅ Animations (fade, slide, rotate, etc.)
+✅ Dropdown menus
+✅ Image sliders/carousels
+✅ Pop-up modals
+✅ Dark/Light mode toggle
+✅ Live search suggestions
+✅ Shopping cart updates
+✅ Like/Dislike buttons
+✅ Tabs and accordions
+✅ Real-time chat
+✅ Loading new data without refreshing (AJAX/Fetch API)
+✅ Countdown timers
+✅ Notifications and alerts
+✅ Drag and drop
+✅ Interactive maps
+✅ Games -->
+
+<!--q.3 explain use strict 
+=> "use strict" is a special directive used to enable Strict Mode in JavaScript, which helps write safer and error-free code by preventing common mistakes.
+
+Why do we use "use strict"?
+
+It helps by:
+
+✅ Preventing accidental global variables.
+✅ Throwing errors for bad coding practices.
+✅ Making code more secure.
+✅ Making debugging easier.
+✅ Helping developers write cleaner code.-->
+
